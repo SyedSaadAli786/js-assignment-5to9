@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    
+</head>
+<body>
+
+
+
+    
+    <table>
+
+        
+            <tr>
+                <th>Subject</th>
+                <th>Total Marks</th>
+                <th>Obt Marks</th>
+                <th>Percentage</th>
+            </tr>
+    
+        <tr>
+            <td id="demo">  </td>
+            <td id="demo2"></td>
+            <td id="demo3"></td>
+            <td id="demo4"></td>
+        </tr>
+        <tr>
+            <td id="demo1">  </td>
+            <td id="demo12"></td>
+            <td id="demo13"></td>
+            <td id="demo14"></td>
+        </tr>
+        
+        <tr>
+            <td id="demo02">  </td>
+            <td id="demo22"></td>
+            <td id="demo23"></td>
+            <td id="demo24"></td>
+        </tr>
+
+        
+        <tr>
+            <td>  </td>
+            <td id="gtotal"></td>
+            <td id="total1"></td>
+            <td id="total2"></td>
+        </tr>
+    </table>
+
+    
+<script>
+
+
+let sub1  = prompt("enter 1st subject");
+let sub2 = prompt("enter your 2nd subject");
+let sub3 = prompt("enter your 3rd subject");
+let total = 100;
+let sub11 = prompt("enter " + sub1 + " marks");
+let sub02 = prompt("enter " + sub2 + " marks");
+let sub03 = prompt("enter " + sub3 + " marks");
+let per1 = (sub11/total*100)
+let per2 = (sub02/total*100)
+let per3 = (sub03/total*100)
+let gtotal = 300;
+let total1 = sub11-sub02+sub03
+let total2 = (total1/total*100)
+
+
+
+document.getElementById("demo").innerHTML = sub1;
+document.getElementById("demo2").innerHTML = total;
+document.getElementById("demo3").innerHTML = sub11;
+document.getElementById("demo4").innerHTML = per1;
+
+document.getElementById("demo1").innerHTML = sub2;
+document.getElementById("demo12").innerHTML = total;
+document.getElementById("demo13").value = sub02;
+document.getElementById("demo14").innerHTML = per2;
+
+
+document.getElementById("demo02").innerHTML = sub3;
+document.getElementById("demo22").innerHTML = total;
+document.getElementById("demo23").innerHTML = sub03;
+document.getElementById("demo24").innerHTML = per3;
+   
+
+document.getElementById("gtotal").innerHTML = gtotal;
+document.getElementById("total1").innerHTML = total1;
+document.getElementById("total2").innerHTML = total2;
+
+   
+   
+   
+   
+   
+   </script>
+
+   
+
+</body>
+</html>
